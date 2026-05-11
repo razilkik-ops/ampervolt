@@ -9,17 +9,12 @@
     />
     <title>АмперВольт - электромонтажные работы в Минске</title>
     <link rel="icon" href="assets/logo-ampervolt.jpg" />
-    <link rel="preconnect" href="https://unpkg.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="АмперВольт">
-        <span class="brand-logo"><img src="assets/logo-ampervolt.jpg" alt="" /></span>
-        <span>
-          <strong>АмперВольт</strong>
-          <small>электромонтаж в Минске</small>
-        </span>
+        <img src="assets/ampervolt-header-logo.svg" alt="АмперВольт" />
       </a>
 
       <button class="nav-toggle icon-button" type="button" aria-label="Открыть меню" data-nav-toggle>
@@ -28,292 +23,218 @@
 
       <nav class="site-nav" data-nav>
         <a href="#services">Услуги</a>
-        <a href="#works">Работы</a>
-        <a href="#prices">Цены</a>
+        <a href="#prices">Прайс</a>
+        <a href="#process">Процесс</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#contact">Контакты</a>
       </nav>
 
-      <a class="header-call" href="tel:+375290000000">
-        <i data-lucide="phone"></i>
-        +375 29 000-00-00
-      </a>
+      <a class="header-phone" href="tel:+375290000000">+375 29 000-00-00</a>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Главный экран">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-current" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/electrician-hero.png" alt="" />
         </div>
 
-        <div class="hero-content">
-          <div class="hero-copy">
-            <img class="hero-logo" src="assets/logo-ampervolt.jpg" alt="Логотип АмперВольт" />
-            <p class="eyebrow">Минск и Минский район</p>
-            <h1>АмперВольт</h1>
-            <p class="hero-lead">
-              Аккуратный электромонтаж под ключ: от замены розетки до сборки щита
-              и полной разводки в квартире, доме или офисе.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contact">
-                <i data-lucide="send"></i>
-                Рассчитать работу
-              </a>
-              <a class="button button-secondary" href="#services">
-                <i data-lucide="list-checks"></i>
-                Смотреть услуги
-              </a>
-            </div>
-          </div>
-
-          <aside class="hero-panel power-board" aria-label="Ключевые преимущества">
-            <div class="board-head">
-              <span class="board-light"></span>
-              <span>Щит готовности</span>
-            </div>
-            <div class="signal-line" aria-hidden="true">
-              <span></span>
-            </div>
-            <div class="panel-topline">
-              <span>Сегодня</span>
-              <strong>выезд от 40 BYN</strong>
-            </div>
-            <dl class="hero-stats">
-              <div>
-                <dt>8 лет</dt>
-                <dd>практики</dd>
-              </div>
-              <div>
-                <dt>24/7</dt>
-                <dd>аварийно</dd>
-              </div>
-              <div>
-                <dt>1 год</dt>
-                <dd>гарантия</dd>
-              </div>
-            </dl>
-            <div class="trust-row">
-              <span><i data-lucide="shield-check"></i> договор</span>
-              <span><i data-lucide="scan-search"></i> диагностика</span>
-            </div>
+        <div class="hero-layout">
+          <aside class="hero-index" aria-label="Показатели">
+            <div><span>01</span><strong>8 лет</strong><small>практики</small></div>
+            <div><span>02</span><strong>24/7</strong><small>аварийный выезд</small></div>
+            <div><span>03</span><strong>1 год</strong><small>гарантия</small></div>
           </aside>
-        </div>
-      </section>
 
-      <section class="quick-strip" aria-label="Быстрые услуги">
-        <div>
-          <i data-lucide="plug-zap"></i>
-          <span>Розетки и выключатели</span>
-        </div>
-        <div>
-          <i data-lucide="panel-top"></i>
-          <span>Электрощиты</span>
-        </div>
-        <div>
-          <i data-lucide="cable"></i>
-          <span>Проводка под ключ</span>
-        </div>
-        <div>
-          <i data-lucide="siren"></i>
-          <span>Срочный выезд</span>
-        </div>
-      </section>
-
-      <section class="section intro" id="services">
-        <div class="section-heading">
-          <p class="eyebrow">Что делаем</p>
-          <h2>Электрика без хаоса, задержек и сомнительных скруток</h2>
-        </div>
-        <p class="section-note">
-          Проектируем трассы, подбираем защиту, подписываем автоматы, убираем пыль
-          после штробления и оставляем понятную схему. Работы выполняются по нормам
-          и с нормальным человеческим объяснением каждого решения.
-        </p>
-      </section>
-
-      <section class="services-grid" aria-label="Услуги">
-        <article class="service-card">
-          <i data-lucide="home"></i>
-          <h3>Квартиры и дома</h3>
-          <p>Новая проводка, перенос точек, теплые полы, световые группы, кухня и санузлы.</p>
-          <a href="#contact">Заказать <i data-lucide="arrow-up-right"></i></a>
-        </article>
-        <article class="service-card accent">
-          <i data-lucide="building-2"></i>
-          <h3>Офисы и бизнес</h3>
-          <p>Электроснабжение рабочих мест, серверные, освещение, кабель-каналы и щиты.</p>
-          <a href="#contact">Обсудить <i data-lucide="arrow-up-right"></i></a>
-        </article>
-        <article class="service-card">
-          <i data-lucide="gauge"></i>
-          <h3>Диагностика</h3>
-          <p>Поиск обрыва, перегрева, выбивания автоматов, слабого контакта и утечек.</p>
-          <a href="#contact">Проверить <i data-lucide="arrow-up-right"></i></a>
-        </article>
-        <article class="service-card">
-          <i data-lucide="shield-check"></i>
-          <h3>Щиты и защита</h3>
-          <p>Сборка и модернизация щитов: УЗО, дифавтоматы, реле напряжения, маркировка.</p>
-          <a href="#contact">Собрать <i data-lucide="arrow-up-right"></i></a>
-        </article>
-      </section>
-
-      <section class="section split-section" id="works">
-        <div class="work-copy">
-          <p class="eyebrow">Подход</p>
-          <h2>Сначала измеряем и считаем нагрузку, потом режем стены</h2>
-          <p>
-            В электрике красивый результат начинается не с финишной рамки, а с
-            логики схемы. Поэтому перед работой проверяем ввод, группы, материал
-            стен, будущую технику и запас мощности.
-          </p>
-          <div class="steps">
-            <div><span>01</span> Осмотр и замеры</div>
-            <div><span>02</span> Смета и схема</div>
-            <div><span>03</span> Монтаж и проверка</div>
+          <div class="hero-statement">
+            <p class="section-kicker">Минск и Минский район</p>
+            <h1>Электрика без переделок</h1>
+            <p>
+              Проектируем, собираем щиты, разводим линии и устраняем аварии.
+              Работаем по понятной смете, с проверкой нагрузки и аккуратной сдачей.
+            </p>
           </div>
-        </div>
-        <div class="circuit-showcase" aria-label="Типовые работы">
-          <div class="circuit-board">
-            <span class="rail rail-a"></span>
-            <span class="rail rail-b"></span>
-            <span class="rail rail-c"></span>
-            <span class="node node-a"></span>
-            <span class="node node-b"></span>
-            <span class="node node-c"></span>
-            <div class="breaker breaker-one">
-              <i data-lucide="shield-check"></i>
-              <strong>Щит</strong>
-              <span>УЗО, автоматы, маркировка</span>
-            </div>
-            <div class="breaker breaker-two">
-              <i data-lucide="activity"></i>
-              <strong>Линия</strong>
-              <span>замер, нагрузка, защита</span>
-            </div>
-            <div class="breaker breaker-three">
-              <i data-lucide="lightbulb"></i>
-              <strong>Свет</strong>
-              <span>сцены, группы, проходные</span>
-            </div>
+
+          <div class="hero-request">
+            <a class="button button-primary" href="#contact">
+              <i data-lucide="arrow-right"></i>
+              Оставить заявку
+            </a>
+            <a class="button button-plain" href="#prices">Посмотреть цены</a>
           </div>
         </div>
       </section>
 
-      <section class="section price-section" id="prices">
-        <div class="section-heading">
-          <p class="eyebrow">Ориентиры</p>
-          <h2>Прозрачные цены до начала работ</h2>
+      <section class="summary-strip" aria-label="Кратко о компании">
+        <div>
+          <b>1500+</b>
+          <span>завершённых проектов</span>
+        </div>
+        <div>
+          <b>без сюрпризов</b>
+          <span>смета до начала работ</span>
+        </div>
+        <div>
+          <b>под ключ</b>
+          <span>от схемы до маркировки щита</span>
+        </div>
+        <a href="tel:+375290000000">Позвонить</a>
+      </section>
+
+      <section class="services" id="services">
+        <div class="section-title">
+          <p class="section-kicker">Услуги</p>
+          <h2>Не карточки ради карточек, а понятные рабочие направления</h2>
         </div>
 
-        <div class="price-layout">
-          <div class="price-list">
-            <div class="price-row">
-              <span>Установка розетки или выключателя</span>
-              <strong>от 25 BYN</strong>
-            </div>
-            <div class="price-row">
-              <span>Диагностика неисправности</span>
-              <strong>от 45 BYN</strong>
-            </div>
-            <div class="price-row">
-              <span>Сборка электрощита</span>
-              <strong>от 160 BYN</strong>
-            </div>
-            <div class="price-row">
-              <span>Разводка электрики в квартире</span>
-              <strong>от 18 BYN/м²</strong>
-            </div>
-          </div>
-
-          <form class="calculator" data-calculator>
-            <h3>Быстрая оценка</h3>
-            <label>
-              Тип объекта
-              <select name="object">
-                <option value="120">Квартира</option>
-                <option value="180">Дом</option>
-                <option value="220">Офис</option>
-              </select>
-            </label>
-            <label>
-              Площадь, м²
-              <input type="range" name="area" min="20" max="160" value="62" />
-              <output data-area-output>62 м²</output>
-            </label>
-            <label class="checkbox-row">
-              <input type="checkbox" name="urgent" />
-              Срочный выезд
-            </label>
-            <div class="estimate">
-              <span>Ориентир</span>
-              <strong data-estimate>от 1 236 BYN</strong>
-            </div>
-          </form>
+        <div class="service-list">
+          <article>
+            <span>01</span>
+            <h3>Электромонтаж под ключ</h3>
+            <p>Полная разводка электрики в квартире, доме или офисе: трассы, точки, щит, проверка.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Сборка электрощитов</h3>
+            <p>Автоматы, УЗО, дифзащита, реле напряжения, маркировка линий и понятная схема.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Освещение и сценарии</h3>
+            <p>Трековые системы, проходные выключатели, уличный свет, подсветка кухни и санузлов.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Аварийный выезд</h3>
+            <p>Поиск обрыва, перегрева, короткого замыкания, выбивающих автоматов и слабых контактов.</p>
+          </article>
         </div>
       </section>
 
-      <section class="reviews" aria-label="Отзывы">
-        <article>
+      <section class="workboard" id="process">
+        <div class="workboard-copy">
+          <p class="section-kicker">Подход</p>
+          <h2>Сначала диагностика, потом монтаж</h2>
           <p>
-            “Перенесли щит, развели кухню и сделали подсветку. После мастеров
-            осталось чисто, все автоматы подписаны, схема на руках.”
+            Электрика не любит догадки. Мы проверяем ввод, группы, будущую технику,
+            материал стен и только после этого предлагаем схему работ.
           </p>
-          <strong>Анна, Новая Боровая</strong>
-        </article>
-        <article>
-          <p>
-            “В офисе постоянно выбивало линию. Нашли перегрев, заменили участок,
-            предложили нормальное разделение групп. Работает спокойно.”
-          </p>
-          <strong>Игорь, Минск-Мир</strong>
-        </article>
+        </div>
+        <ol class="process-list">
+          <li><span>замер</span><strong>Осматриваем объект и фиксируем задачу</strong></li>
+          <li><span>смета</span><strong>Согласуем материалы, сроки и стоимость</strong></li>
+          <li><span>монтаж</span><strong>Делаем работу, тестируем линии и сдаём результат</strong></li>
+        </ol>
       </section>
 
-      <section class="contact-section" id="contact">
-        <div class="contact-copy">
-          <p class="eyebrow">Заявка</p>
-          <h2>Опишите задачу, а мы быстро сориентируем по цене и срокам</h2>
-          <p>
-            Пришлите адрес, фото щита или стены, список нужных точек. Для срочных
-            случаев лучше звонить: мастер сможет выехать в день обращения.
-          </p>
-          <div class="contact-links">
-            <a href="tel:+375290000000"><i data-lucide="phone-call"></i> +375 29 000-00-00</a>
-            <a href="mailto:hello@ampervolt.by"><i data-lucide="mail"></i> hello@ampervolt.by</a>
-            <span><i data-lucide="map-pin"></i> Минск, выезд по району</span>
-          </div>
+      <section class="pricing" id="prices">
+        <div class="section-title">
+          <p class="section-kicker">Прайс</p>
+          <h2>Ориентиры по стоимости</h2>
         </div>
 
-        <form class="lead-form" data-lead-form>
+        <div class="price-table">
+          <div class="price-row">
+            <span>Диагностика неисправности</span>
+            <strong>от 45 BYN</strong>
+            <a href="#contact">Заказать</a>
+          </div>
+          <div class="price-row">
+            <span>Установка розетки или выключателя</span>
+            <strong>от 25 BYN</strong>
+            <a href="#contact">Заказать</a>
+          </div>
+          <div class="price-row">
+            <span>Сборка электрощита</span>
+            <strong>от 160 BYN</strong>
+            <a href="#contact">Заказать</a>
+          </div>
+          <div class="price-row">
+            <span>Разводка электрики в квартире</span>
+            <strong>от 18 BYN/м²</strong>
+            <a href="#contact">Заказать</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-section" aria-label="Калькулятор стоимости">
+        <div class="calculator-copy">
+          <p class="section-kicker">Калькулятор</p>
+          <h2>Прикиньте бюджет до звонка</h2>
+          <p>
+            Это предварительная оценка для планирования. Точная сумма зависит от
+            состояния ввода, материала стен, количества линий и выбранной защиты.
+          </p>
+        </div>
+
+        <form class="calculator" data-calculator>
           <label>
-            Имя
-            <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            Тип объекта
+            <select name="object">
+              <option value="120">Квартира</option>
+              <option value="180">Дом</option>
+              <option value="220">Офис</option>
+            </select>
           </label>
           <label>
-            Телефон
-            <input type="tel" name="phone" placeholder="+375 __ ___-__-__" required />
+            Площадь
+            <input type="range" name="area" min="20" max="180" value="62" />
+            <output data-area-output>62 м²</output>
           </label>
-          <label>
-            Что нужно сделать
-            <textarea name="message" rows="4" placeholder="Например: заменить проводку в двухкомнатной квартире"></textarea>
+          <label class="checkbox-row">
+            <input type="checkbox" name="urgent" />
+            Срочный выезд
           </label>
-          <button class="button button-primary" type="submit">
-            <i data-lucide="bolt"></i>
-            Отправить заявку
-          </button>
+          <div class="estimate">
+            <span>Ориентир</span>
+            <strong data-estimate>от 1 236 BYN</strong>
+          </div>
+          <a class="button button-primary" href="#contact">
+            <i data-lucide="arrow-right"></i>
+            Уточнить смету
+          </a>
+        </form>
+      </section>
+
+      <section class="reviews-contact" id="reviews">
+        <div class="reviews">
+          <p class="section-kicker">Отзывы</p>
+          <h2>Коротко от клиентов</h2>
+          <article>
+            <p>«Перенесли щит и развели кухню. Всё подписано, схема на руках, после работ чисто.»</p>
+            <strong>Анна, Минск</strong>
+          </article>
+          <article>
+            <p>«Нашли перегрев в офисной линии и нормально разделили группы. Теперь не выбивает.»</p>
+            <strong>Игорь, Минск-Мир</strong>
+          </article>
+        </div>
+
+        <form class="lead-form" id="contact" data-lead-form>
+          <p class="section-kicker">Заявка</p>
+          <h2>Опишите задачу</h2>
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <select name="type" aria-label="Тип работ">
+            <option>Тип работ</option>
+            <option>Электромонтаж под ключ</option>
+            <option>Сборка электрощита</option>
+            <option>Аварийный выезд</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Что нужно сделать"></textarea>
+          <button class="button button-primary" type="submit">Отправить</button>
           <p class="form-status" data-form-status role="status"></p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span class="footer-brand"><img src="assets/logo-ampervolt.jpg" alt="" /> © 2026 АмперВольт</span>
-      <span>Электромонтажные работы в Минске</span>
+      <a class="brand" href="#top" aria-label="АмперВольт">
+        <img src="assets/ampervolt-header-logo.svg" alt="АмперВольт" />
+      </a>
+      <div>
+        <a href="tel:+375290000000">+375 29 000-00-00</a>
+        <small>© 2026 АмперВольт. Электромонтаж в Минске.</small>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

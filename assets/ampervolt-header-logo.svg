@@ -1,0 +1,15 @@
+<svg width="310" height="116" viewBox="0 0 310 116" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">АмперВольт</title>
+  <path d="M5 56H296" stroke="white" stroke-width="2.4" stroke-dasharray="6 7" opacity="0.9"/>
+  <path d="M106 12V104" stroke="white" stroke-width="2.4" stroke-dasharray="6 7" opacity="0.9"/>
+  <path d="M96 12L106 0L116 12H96Z" fill="white"/>
+  <path d="M296 46L310 56L296 66V46Z" fill="white"/>
+  <path
+    d="M27 66C35 21 51 7 68 18C89 32 92 104 113 103C126 102 134 77 141 46"
+    stroke="#b92b32"
+    stroke-width="14"
+    stroke-linecap="butt"
+  />
+  <text x="124" y="47" fill="white" font-family="Inter, Arial, sans-serif" font-size="47" font-weight="900">mper</text>
+  <text x="138" y="101" fill="white" font-family="Inter, Arial, sans-serif" font-size="47" font-weight="900">Volt</text>
+</svg>
