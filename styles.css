@@ -129,6 +129,16 @@ p {
 
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: -10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
 }
 
 .icon-button {
@@ -137,6 +147,13 @@ p {
   border: 1px solid var(--line-invert);
   background: transparent;
   color: var(--white);
+}
+
+.nav-toggle.icon-button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: transparent;
 }
 
 .hero {
@@ -691,13 +708,12 @@ select option {
 
 @media (max-width: 1040px) {
   .site-header {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     min-height: 70px;
   }
 
   .nav-toggle {
-    display: grid;
-    place-items: center;
+    display: inline-flex;
     justify-self: end;
   }
 
